@@ -37,18 +37,18 @@
     <div><button class="btnOne">Prueba de conducción</button></div>
   </div>
   <br><br><br><br>
-  <scrollerChange/>
+  <!-- <scrollerChange/> -->
   <scrollerChangeTwo/>
 </div>
 </template>
 <script>
-  import scrollerChange from './components/scrollerChange.vue'
+  // import scrollerChange from './components/scrollerChange.vue'
   import scrollerChangeTwo from './components/scrollerChangeTwo.vue'
 
   export default {
     name: 'App',
     components: {
-      scrollerChange,
+      // scrollerChange,
       scrollerChangeTwo,
     },
     data() {
@@ -68,6 +68,8 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: lighter;
 }
 #app {
   margin: 0;
@@ -114,8 +116,7 @@ body, html {
   transition: transform 0.3s ease-in-out;
 }
 .logoHead:hover{
-  /* transform: translateX(5%) translateY(-5px); */
-  /* transform: scale(1.2); */
+  transform: scale(1.2);
 }
 .listAll{
   display: flex;
@@ -174,6 +175,6 @@ a {
   color: azure;
 }
 a:hover{
-  color: rgb(110, 110, 110);
+  color: rgb(255, 0, 0);
 }
 </style>
